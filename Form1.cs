@@ -23,8 +23,6 @@ namespace WindowsFormsAppProjekt
             spisukkrienti spisuk = new spisukkrienti();  // създава формата
             spisuk.ReadingCSVFile();                    // вика функцията която чете от файла
             spisuk.Show();                             //показва формата
-
-
         }
         // informaciq za avtora
         private void info_Click(object sender, EventArgs e)
