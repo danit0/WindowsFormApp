@@ -132,7 +132,6 @@ namespace WindowsFormsAppProjekt
             if (bulstat != dnomer.Substring(2))
             {
                 MessageBox.Show("Данъчният номер не съответства на булстата на фирмата!", " ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                 return;
             }
             // ako cqlata forma e polulnena yapiswa w faila
