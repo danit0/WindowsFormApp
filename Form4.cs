@@ -20,9 +20,11 @@ namespace WindowsFormsAppProjekt
         {
             InitializeComponent();
         }
+
         private bool Itsreplacing = false;// глобална променливата е с стойност false когато запазваме нова информация и true когато редактираме 
         private string oldline = ""; // глобална променливата пази предишните стойности при редактиране
                                      //ЗАПАЗИ Бутон 1 проверява въведената информация и запазва във файла
+
         private void button1_Click(object sender, EventArgs e)
         {
             // наименование на фирмата
@@ -158,7 +160,6 @@ namespace WindowsFormsAppProjekt
                         {
                             File.AppendAllText(file1, String.Join(";", naimenovanie, statut, bulstat, dnomer, adress, telefon, email, web, mol, System.Environment.NewLine));
                         }
-
                         Close();
                         spisukkrienti.RefreshForm();
                     }
@@ -169,6 +170,7 @@ namespace WindowsFormsAppProjekt
                 }
             }
         }
+
         // Проверява дали са въведени само букви
         public static bool IsAllLetters(string s)
         {
@@ -179,6 +181,7 @@ namespace WindowsFormsAppProjekt
             }
             return true;
         }
+
         // Проверява дали са въведени само букви и space
         public static bool IsAllLettersAndSpaces(string s)
         {
@@ -189,6 +192,7 @@ namespace WindowsFormsAppProjekt
             }
             return true;
         }
+
         // Проверява дали са въведени само букви и цифри
         public static bool IsAllLettersOrDigits(string s)
         {
@@ -199,6 +203,7 @@ namespace WindowsFormsAppProjekt
             }
             return true;
         }
+
         // Проверява дали са въведени само цифри
         public static bool IsAllDigits(string s)
         {
@@ -209,6 +214,7 @@ namespace WindowsFormsAppProjekt
             }
             return true;
         }
+
         // Наименование на фирмата/ може да съдържа всичко / ДА Е ПО ДЪЛГО ОТ ЕДИН ЗНАК
         private String Naimenovanie()
         {
@@ -223,6 +229,7 @@ namespace WindowsFormsAppProjekt
             }
             return naimenovanie;
         }
+
         // radiobuton за статут на фирмата
         private string Statut()
         {
@@ -250,6 +257,7 @@ namespace WindowsFormsAppProjekt
             else
                 return statut;
         }
+
         // Булстат от 9 цифри 
         private String Bulstat()
         {
@@ -268,6 +276,7 @@ namespace WindowsFormsAppProjekt
             }
             return bulstat;
         }
+
         // Данъчен номер
         private String DanuchenNomer()
         {
@@ -278,6 +287,7 @@ namespace WindowsFormsAppProjekt
             }
             return dnomer;
         }
+
         // Адрес
         private String Adress()
         {
@@ -288,6 +298,7 @@ namespace WindowsFormsAppProjekt
             }
             return adress;
         }
+
         // Телефон 12 цифри nachalo s 087 088 089
         private String GetTelefon()
         {
@@ -312,6 +323,7 @@ namespace WindowsFormsAppProjekt
             }
             return telefon;
         }
+
         //Имейл
         private String GetEmail()
         {
@@ -323,6 +335,7 @@ namespace WindowsFormsAppProjekt
             }
             return email;
         }
+
         // Уеб адрес
         private String GetWEb()
         {
@@ -334,6 +347,7 @@ namespace WindowsFormsAppProjekt
             }
             return web;
         }
+
         // Мол imenata na sobstvenika
         private String GetMol()
         {
@@ -347,6 +361,7 @@ namespace WindowsFormsAppProjekt
             }
             return mol;
         }
+
         //  Пълни полетата в формата при редактиране
         public void fillText(string line)
         {
@@ -381,6 +396,7 @@ namespace WindowsFormsAppProjekt
             Itsreplacing = true;
             oldline = line;
         }
+
         // pri klikane vurhu poleto za wuwejdane na Danuchen nomer vuvejda avtomatichno nomera ot bulstata
         private void textBox3_Click(object sender, EventArgs e)
         {

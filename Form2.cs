@@ -19,22 +19,26 @@ namespace WindowsFormsAppProjekt
         {
             InitializeComponent();
         }
+
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
         }
+
         //  извиква форма за физическо лице
         private void toolStripMenuItem5_Click(object sender, EventArgs e)
         {
             lice lice = new lice();
             lice.Show();
         }
+
         //  извиква форма за юридическо лице
         private void toolStripMenuItem4_Click(object sender, EventArgs e)
         {
             firma firma = new firma();
             firma.Show();
         }
+
         // Чете текста от файла и го визуализира в листбокса
         public void ReadingCSVFile()
         {
@@ -73,15 +77,14 @@ namespace WindowsFormsAppProjekt
                         MessageBox.Show("Файлът е създаден!");
 
                     }
-
                 }
                 else
                 {
                     Close();
                 }
             }
-
         }
+
         // Редактиране на информацията
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
@@ -115,6 +118,7 @@ namespace WindowsFormsAppProjekt
                 MessageBox.Show("Не сте маркирали ред!", " ", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
+
         // изтриване на ред
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
@@ -147,6 +151,7 @@ namespace WindowsFormsAppProjekt
                 MessageBox.Show("Не сте маркирали ред!", " ", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
         }
+
         //подновява формата
         public static void RefreshForm()
         {

@@ -17,6 +17,7 @@ namespace WindowsFormsAppProjekt
         {
             InitializeComponent();
         }
+
         // zarejda spisuk s klienti
         public void Klienti_Click(object sender, EventArgs e)
         {
@@ -24,6 +25,7 @@ namespace WindowsFormsAppProjekt
             spisuk.ReadingCSVFile();                    // вика функцията която чете от файла
             spisuk.Show();                             //показва формата
         }
+
         // informaciq za avtora
         private void info_Click(object sender, EventArgs e)
         {
