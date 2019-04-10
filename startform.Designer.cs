@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsAppProjekt
 {
-    partial class Form1
+    partial class startform
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Label label1;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(startform));
             System.Windows.Forms.Button info;
             System.Windows.Forms.Button klienti;
             label1 = new System.Windows.Forms.Label();

@@ -134,7 +134,7 @@ namespace WindowsFormsAppProjekt
                 MessageBox.Show("Данъчният номер не съответства на булстата на фирмата!", " ", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            // ako cqlata forma e polulnena yapiswa w faila
+            // ako cqlata forma e polulnena zapiswa w faila
             if (naimenovanie != "" && statut != "" && bulstat != "" && dnomer != "" && adress != "" &&
                telefon != "" && email != "" && web != "" && mol != "")
             {

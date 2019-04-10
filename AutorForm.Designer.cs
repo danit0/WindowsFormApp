@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsAppProjekt
 {
-    partial class Form3
+    partial class AutorForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutorForm));
             this.създател = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 

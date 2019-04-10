@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsAppProjekt
 {
-    public partial class Form3 : Form
+    public partial class AutorForm : Form
     {
-        public Form3()
+        public AutorForm()
         {
             InitializeComponent();
         }

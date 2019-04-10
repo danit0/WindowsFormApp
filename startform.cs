@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsAppProjekt
 {
-    public partial class Form1 : Form
+    public partial class startform : Form
     {
-        public Form1()
+        public startform()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace WindowsFormsAppProjekt
         // informaciq za avtora
         private void info_Click(object sender, EventArgs e)
         {
-            Form3 avtor = new Form3();  // създава форма с информация за автора
+            AutorForm avtor = new AutorForm();  // създава форма с информация за автора
             avtor.Show();              // визуализира формата
         }
 
